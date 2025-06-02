@@ -1,0 +1,3 @@
+[submodule "apps_importadas/appusuario"]
+	path = apps_importadas/appusuario
+	url = git@github.com:camilodev1990/appusuario
