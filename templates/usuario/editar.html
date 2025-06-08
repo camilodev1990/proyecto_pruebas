@@ -1,0 +1,16 @@
+{% extends "home.html" %}
+
+{% block title %}editar{% endblock title %}
+
+{% block contenido %}
+
+
+
+<form action="" method="POST">
+    <p>esta es la plantilla editar</p>
+    {% csrf_token %}
+    {{form.as_p}}
+    <input type="submit" value="modificar">
+</form>
+
+{% endblock contenido %}

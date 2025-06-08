@@ -1,0 +1,17 @@
+{% extends "home.html" %}
+
+{% block title %}verificar token reset{% endblock title %}
+
+{% block contenido %}
+
+
+
+<form action="" method="POST">
+    <p>esta es la plantilla verificar token reset</p>
+    <p>aqui se escribe el token que llego al correo</p>
+    {% csrf_token %}
+    {{form.as_p}}
+    <input type="submit" value="verificar">
+</form>
+
+{% endblock contenido %}

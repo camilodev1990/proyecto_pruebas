@@ -1,0 +1,16 @@
+{% extends "home.html" %}
+
+{% block title %}Desactivar Cuenta{% endblock title %}
+
+{% block contenido %}
+
+
+
+<form action="" method="POST">
+    <p>esta es la plantilla Desactivar Cuenta</p>
+    {% csrf_token %}
+    {{form.as_p}}
+    <input type="submit" value="Desactivar">
+</form>
+
+{% endblock contenido %}

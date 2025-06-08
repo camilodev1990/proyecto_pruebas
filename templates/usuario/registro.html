@@ -1,0 +1,17 @@
+{% extends "home.html" %}
+
+{% block title %}registro{% endblock title %}
+
+{% block contenido %}
+
+
+
+<form action="" method="POST">
+    <p>esta es la plantilla registro</p>
+    {% csrf_token %}
+    {{form.as_p}}
+
+    <input type="submit" value="registrar">
+</form>
+
+{% endblock contenido %}
